@@ -1,4 +1,4 @@
-#include "arduino.h"
+#include <Arduino.h>
 #include "SoftwareI2C.h"
 #include "Pins.h"
 #include "RTC.h"
@@ -138,5 +138,3 @@ bool RTC::CheckPeriod(unsigned long& Timer, unsigned long PeriodMS)
   }
   return false;
 }
-
-

@@ -1,4 +1,4 @@
-#include "arduino.h"
+#include <Arduino.h>
 // disable warnings in EEPROM.h
 #pragma GCC diagnostic ignored "-Wignored-qualifiers"
 #include "EEPROM.h"

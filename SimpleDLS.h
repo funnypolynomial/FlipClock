@@ -1,6 +1,6 @@
 #pragma once
 
-#include "arduino.h"
+#include <Arduino.h>
 
 // A simple Daylight Saving Time adjustment class
 // Caller provides the dates DLS changes.  
@@ -30,4 +30,3 @@ private:
   static unsigned short OrdinalDay(int day, int month);
   static const byte* m_pData;
 };
-

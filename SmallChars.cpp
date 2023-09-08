@@ -1,4 +1,4 @@
-#include "arduino.h"
+#include <Arduino.h>
 #include <avr/pgmspace.h>
 #include "ILI948x.h"
 #include "HSV.h"
@@ -2439,4 +2439,3 @@ void SmallChars::drawStr(int x, int y, const char* str, int len, word foreground
     len--;
   }
 }
-

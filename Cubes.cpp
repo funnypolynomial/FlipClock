@@ -1,11 +1,10 @@
-#include "arduino.h"
+#include <Arduino.h>
 #include "ILI948x.h"
 #include "RTC.h"
 #include "Leaves.h"
 #include "SimpleDLS.h"
 #include "Config.h"
 #include "HSV.h"
-#include "Config.h"
 #include "LargeDigits.h"
 #include "Clock.h"
 #include "Cubes.h"
