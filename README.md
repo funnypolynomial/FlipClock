@@ -29,4 +29,6 @@ There was a little program memory left, so I squeezed in a very simple Pong Cloc
 
 ![image](https://user-images.githubusercontent.com/5882685/236368049-de258c94-955b-44d8-b259-e23d93a67fac.png)
 
-There are nore details of the project on [Hackaday](https://hackaday.io/project/167162-flipclock) and more photos on [Flickr](https://flic.kr/s/aHsmGbmEUF)
+There are nore details of the project on [Hackaday](https://hackaday.io/project/167162-flipclock) and more photos on [Flickr](https://flic.kr/s/aHsmGbmEUF).
+
+Short [Video](https://youtu.be/JB12y5fYdpQ)
