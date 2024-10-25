@@ -1,6 +1,6 @@
 #pragma once
 
-class SmallChars  // smaller letters ans numbers for the Date
+class SmallChars  // smaller letters and numbers for the Date
 {
   public: 
     static const int Width = 46;

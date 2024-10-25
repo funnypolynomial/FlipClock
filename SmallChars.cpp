@@ -6,7 +6,8 @@
 #include "SmallChars.h"
 
 // nHeight = 88, Arial Monospaced MT
-// some letters excluded, eg Q, Z...
+// Some letters excluded to save space, eg Q, Z...
+// Letters present are listed in char_map[]. 
 // ~5.5k data
 // upper and lower char data
 const byte PROGMEM rowDataUpper[] =
@@ -691,7 +692,8 @@ const byte PROGMEM rowDataUpper[] =
   BACK( 6), FORE( 7), BACK( 2), FORE( 8) + END,
   BACK( 6), FORE( 7), BACK( 1), FORE(10) + END,
   BACK( 6), FORE(18) + END,
-  BACK( 6), FORE(19) + END,*/
+  BACK( 6), FORE(19) + END,
+  BACK( 6), FORE(20) + END, */
   // 'L'
   BACK(46) + END,
   BACK(46) + END,
@@ -869,6 +871,7 @@ const byte PROGMEM rowDataUpper[] =
   BACK( 5), FORE( 7), BACK(21), FORE( 7) + END,
   BACK( 5), FORE( 7), BACK(21), FORE( 7) + END,
   BACK( 5), FORE( 6), BACK(23), FORE( 7) + END,
+  BACK( 4), FORE( 7), BACK(23), FORE( 7) + END,
   BACK( 4), FORE( 7), BACK(23), FORE( 7) + END,
   BACK( 4), FORE( 7), BACK(23), FORE( 7) + END,
   BACK( 4), FORE( 7), BACK(23), FORE( 7) + END,
@@ -1092,6 +1095,7 @@ const byte PROGMEM rowDataUpper[] =
   BACK(18), FORE(10) + END,
   BACK(19), FORE( 8) + END,
   BACK(19), FORE( 8) + END,
+  BACK(19), FORE( 9) + END,
   BACK(19), FORE( 9) + END, */
   // 'Y'
   BACK(46) + END,
@@ -1153,7 +1157,8 @@ const byte PROGMEM rowDataUpper[] =
   BACK(20), FORE( 8) + END,
   BACK(19), FORE( 9) + END,
   BACK(19), FORE( 8) + END,
-  BACK(18), FORE( 8) + END, */
+  BACK(18), FORE( 8) + END,
+  BACK(18), FORE( 9) + END, */
 };
 
 const byte PROGMEM rowDataLower[] =
@@ -1838,6 +1843,7 @@ const byte PROGMEM rowDataLower[] =
   BACK( 6), FORE( 7), BACK(21), FORE(10) + END,
   BACK( 6), FORE( 7), BACK(22), FORE(10) + END,
   BACK(46) + END,
+  BACK(46) + END,
   BACK(46) + END, */
   // 'L'
   BACK( 9), FORE( 7) + END,
@@ -2023,7 +2029,8 @@ const byte PROGMEM rowDataLower[] =
   BACK(13), FORE(18), BACK( 2), FORE(10) + END,
   BACK(15), FORE(15), BACK( 4), FORE(10) + END,
   BACK(18), FORE( 9), BACK( 9), FORE( 8) + END,
-  BACK(37), FORE( 6) + END, */
+  BACK(37), FORE( 6) + END,
+  BACK(46) + END, */
   // 'R'
   BACK( 6), FORE(27) + END,
   BACK( 6), FORE(24) + END,
@@ -2239,6 +2246,7 @@ const byte PROGMEM rowDataLower[] =
   BACK( 2), FORE( 9), BACK(24), FORE( 8) + END,
   BACK( 1), FORE( 9), BACK(25), FORE( 9) + END,
   BACK(46) + END,
+  BACK(46) + END,
   BACK(46) + END, */
   // 'Y'
   BACK(17), FORE(11) + END,
@@ -2369,7 +2377,7 @@ void SmallChars::drawFrame(int x, int y, int w, int h)
   }
 }
 
-const char PROGMEM char_map[]  = "0123456789:ABCDEFGHIJLMNOPRSTUVWY\xFF"; // no KQWXZ
+const char PROGMEM char_map[]  = "0123456789:ABCDEFGHIJLMNOPRSTUVWY\xFF"; // no KQXZ
 
 void SmallChars::drawChar(int x, int y, bool top, char ch, word foreground, bool reduce, bool narrow, word background)
 {
